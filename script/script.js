@@ -58,7 +58,7 @@ const applyButton = document.getElementById("apply-btn");
 applyButton.addEventListener("click", function () {
   const couponElement = document.getElementById("coupon-code").value;
   const couponCode = couponElement.split(" ").join("").toUpperCase();
-  if (couponCode === "NEW20") {
+  if (couponCode === "NEW15") {
     const price = updateTotalPrice();
     const discountPrice = document.getElementById("discount-price");
     const discountValue = price * 0.15;
