@@ -72,6 +72,8 @@ applyButton.addEventListener("click", function () {
     discountPrice.innerText = discountValue;
     const grandPrice = document.getElementById("grand-price");
     grandPrice.innerText = price - discountValue;
+  }else{
+    alert("Invalid Coupon");
   }
   const removeCoupon = document.querySelector("#remove-coupon");
   removeCoupon.classList.add("hidden");
