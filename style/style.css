@@ -1,0 +1,20 @@
+.font-inter{
+      font-family: "Inter", sans-serif;
+}
+.font-raleway{
+      font-family: "Raleway", sans-serif;
+}
+/* #blur.active {
+      filter: blur(10px);
+      pointer-events: none;
+      user-select: none;
+}
+#popup{
+      visibility: hidden;
+}
+#popup.active {
+      visibility: visible;
+} */
+button:disabled{
+      opacity: 0.5;
+}
