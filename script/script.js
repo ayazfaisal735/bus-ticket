@@ -57,15 +57,14 @@ const couple20 = document.getElementById("couple20");
 const applyButton = document.getElementById("apply-btn");
 applyButton.addEventListener("click", function () {
   const couponElement = document.getElementById("coupon-code").value;
-  const couponCode = couponElement.split(" ").join("").toUpperCase();
-  if (couponCode === "NEW15") {
+  if (couponElement === "NEW15") {
     const price = updateTotalPrice();
     const discountPrice = document.getElementById("discount-price");
     const discountValue = price * 0.15;
     discountPrice.innerText = discountValue;
     const grandPrice = document.getElementById("grand-price");
     grandPrice.innerText = price - discountValue;
-  } else if (couponCode === "COUPLE20") {
+  } else if (couponElement === "Couple 20") {
     const price = updateTotalPrice();
     const discountPrice = document.getElementById("discount-price");
     const discountValue = price * 0.2;
